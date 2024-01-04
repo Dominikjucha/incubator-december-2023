@@ -1,1 +1,52 @@
+#Task 1
+def results(a,b):
+    result = a+b
+    print(result)
 
+result1 = results(0,1)
+result2 = results(1,2)
+result3 = results(2,3)
+result4 = results(3,4)
+result5 = results(4,5)
+print(final)
+final = result1 + result2 + result3 + result4 + result5
+#Task 2
+def test_function(a,b):
+    """ Why result1 is None? :(
+    """
+    result = a*b
+    print('Result: {0}'.format(result))
+    return(result)
+result1 = test_function(2,4)
+print(result1)
+#######################################
+
+def test_function2(a,b):
+    """ Why do we have only 15 instead of Result: 15 as well? :(
+    """
+    result = a*b
+    #return result - There should not be return because it "stops" next commands
+    print('Result: {0}'.format(result))
+    return(result)
+
+result2 = test_function2(3,5)
+print(result2)
+#Task 3
+class Pizza():
+    def __init__(self, size, name):
+        self.size = size
+        self.name = name
+
+Pizza1 = Pizza(50, "Quattro Formaggi with olive oil")
+Pizza2 = Pizza(32, "Prosciutto with garlic sauce")
+Pizza3 = Pizza(40, "Margherita with tomato sauce")
+
+print(Pizza1.size)
+print(Pizza2.name)
+#Task4
+birth = int(input("Enter Birth Year: "))
+birth2 = 2023 - birth
+if birth2 > 80:
+    print("Classified for Covid vaccine")
+else:
+    print("AssertionError")
